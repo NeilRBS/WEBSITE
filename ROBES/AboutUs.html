@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Section</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #111;
+            color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .about-container {
+            background-color: #222;
+            display: flex;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 900px;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-section {
+            flex: 0 0 40%;
+        }
+
+        .image-section img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .text-section {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .text-section h3 {
+            font-size: 1.2em;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .designer-text {
+            color: #e91e63; /* Match the button color */
+        }
+
+        .text-section p {
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-start; 
+        }
+
+        .text-section .button {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 10px 20px; 
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .text-section .button:hover {
+            background-color: #d81b60;
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+            }
+
+            .image-section {
+                flex: 0 0 100%;
+            }
+
+            .text-section {
+                padding: 30px;
+                align-items: center;
+                text-align: center;
+            }
+
+            .text-section h2 {
+                font-size: 2em;
+            }
+
+            .text-section h3 {
+                font-size: 1em;
+                margin-bottom: 15px;
+            }
+
+            .text-section p {
+                margin-bottom: 20px;
+            }
+
+            .button-container {
+                justify-content: center; /* Center button on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <div class="image-section">
+            <img src="C:\Users\Earl\OneDrive\Documents\ROBES\asap.png" alt="Developer and Designer">
+        </div>
+        <div class="text-section">
+            <h2>About Us</h2>
+            <h3>Developer <span class="designer-text">&amp; Designer</span></h3>
+            <p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
+            <div class="button-container">
+                <a href="#" class="button">Let's Talk</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
